@@ -1,4 +1,4 @@
-import "./styles.css";
+//import "styles.css";
 
 let maxNum = 9;
 let shuffleInterval = 3000;
