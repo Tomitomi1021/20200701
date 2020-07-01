@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <div id="clear" class="title" style="display:none;font-size:20px;">
+      <p style="font-size:70px;">CLEAR</p>
+      <p>~~~設定~~~</p>
+      <p>数字の数:<span id="maxNumView">個</span></p>
+      <p>シャッフルする間隔:<span id="shuffleIntervalView"></span>ミリ秒</p>
+      <p><span id="onclickShuffleView"></span></p>
+
+      <p>~~~結果~~~</p>
+      <p>ミス回数:<span id="missCount">回</span></p>
+      <p>クリア時間:<span id="clearTime"></span>秒</p>
+      <p><button id="retry">もう一度</button></p>
+    </div>
+    <div id="title" class="title">
+      <p style="font-size:50px">数字クリックゲーム</p>
+      <p><button id="start">スタート</button></p>
+    </div>
+    <div id="config" class="title">
+      <p>
+        数字の数:
+        <input id="maxNum" type="number" min="3" step="1" value="9" />
+      </p>
+      <p>
+        シャッフルする間隔:
+        <input
+          id="shuffleInterval"
+          type="number"
+          min="500"
+          step="1"
+          value="3000"
+        />
+      </p>
+      <p>
+        数字をクリックしたときにもシャッフルする
+        <input id="onclickShuffle" type="checkbox" />
+      </p>
+    </div>
+
+    <div id="main"></div>
+    <script src="src/index.js"></script>
+  </body>
+</html>

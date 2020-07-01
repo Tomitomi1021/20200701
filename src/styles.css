@@ -1,0 +1,17 @@
+body {
+  font-family: sans-serif;
+}
+
+.circle {
+  transition: all 500ms 0s ease;
+  background-color: skyblue;
+  border-radius: 30px;
+  font-size: 24px;
+  position: absolute;
+}
+
+.title {
+  text-align: center;
+  color: tomato;
+  font-family: cursive;
+}
